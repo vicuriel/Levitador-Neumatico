@@ -235,3 +235,21 @@ void loop(){
 
   e_prev = e;
 }
+
+
+/*
+IMPORTANTE
+
+- b: parámetro aerodinámico (1/s)  
+- kv: ganancia del ventilador (m/s por PWM)  
+- τ: constante de tiempo del ventilador (s)  
+- s: dinámica inercial (integrador)  
+- s + b: polo aerodinámico  
+- τs + 1: ventilador como primer orden  
+- e^{-T_d s}: retardo total del sistema  
+- Y(s): altura (cm)  
+- U(s): señal PWM
+
+*/
+
+
